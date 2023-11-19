@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation.xml"
+    app:startDestination="@id/yuGiOhListFragment">
+
+    <fragment
+        android:id="@+id/yuGiOhListFragment"
+        android:name="com.example.yugiohapi.ui.list.YuGiOhListFragment"
+        android:label="fragment_yu_gi_oh_list"
+        tools:layout="@layout/fragment_yu_gi_oh_list" >
+        <action
+            android:id="@+id/action_yuGiOhListFragment_to_cardDetailFragment"
+            app:destination="@id/cardDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardDetailFragment"
+        android:name="com.example.yugiohapi.ui.detail.CardDetailFragment"
+        android:label="fragment_card_detail"
+        tools:layout="@layout/fragment_card_detail" />
+</navigation>
